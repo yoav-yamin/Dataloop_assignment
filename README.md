@@ -21,8 +21,8 @@ The publisher service retrieves information about the streets of a given city an
 
 2. Start the services using Docker Compose:
    ```sh
-   docker compose -f 'docker-compose.yml' up -d --build 's2'
-   docker compose -f 'docker-compose.yml' up -d --build 'rabbitmq'
+   docker compose -f docker-compose.yml up -d --build s2
+   docker compose -f docker-compose.yml up -d --build rabbitmq
    ```
    This will start RabbitMQ and MySQL.
 
