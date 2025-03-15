@@ -42,7 +42,7 @@ The publisher service retrieves information about the streets of a given city an
 
 6. Run the publisher service by providing a city name:
    ```sh
-   npx ts-node src\publishing_service.ts <City Name>
+   npx ts-node src/publishing_service.ts <City Name>
    ```
 
 ## Notes
