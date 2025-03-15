@@ -16,7 +16,6 @@ The publisher service retrieves information about the streets of a given city an
 1. Clone this repository:
    ```sh
    git clone https://github.com/yoav-yamin/Dataloop_assignment.git
-   cd src
    ```
 
 2. Start the services using Docker Compose:
@@ -26,23 +25,30 @@ The publisher service retrieves information about the streets of a given city an
    ```
    This will start RabbitMQ and MySQL.
 
-3. Run the consumer service first:
+3. Run 
    ```sh
-   npx ts-node consuming_service.ts
+   npm install --save-dev @types/node
+   ```
+   
+4. Create a .env file with the following variables (The credentials to the MySQL database):
+  - DB_USER
+  - DB_PASSWORD
+
+5. Run the consumer service first:
+   ```sh
+   npx ts-node src\consuming_service.ts
    ```
    This service will keep running, waiting for messages.
 
-4. Run the publisher service by providing a city name:
+6. Run the publisher service by providing a city name:
    ```sh
-   npx ts-node publishing_service.ts <City Name>
+   npx ts-node src\publishing_service.ts <City Name>
    ```
 
 ## Notes
 - This project is based on the assignment described in the following repo:
 https://bitbucket.org/dataloop-ai/dm-interview-assignment/src/main/
-- Make sure to create a .env file with the following variables (The credentials to the MySQL database):
-  - DB_USER
-  - DB_PASSWORD
+
 
 ---
 
