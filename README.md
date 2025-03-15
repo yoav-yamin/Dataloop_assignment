@@ -36,7 +36,7 @@ The publisher service retrieves information about the streets of a given city an
 
 5. Run the consumer service first:
    ```sh
-   npx ts-node src\consuming_service.ts
+   npx ts-node src/consuming_service.ts
    ```
    This service will keep running, waiting for messages.
 
