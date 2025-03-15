@@ -16,7 +16,7 @@ The publisher service retrieves information about the streets of a given city an
 1. Clone this repository:
    ```sh
    git clone https://github.com/yoav-yamin/Dataloop_assignment.git
-   cd dm-interview-assignment/src
+   cd src
    ```
 
 2. Start the services using Docker Compose:
